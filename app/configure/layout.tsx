@@ -2,7 +2,7 @@ import { MaxWidthWrapper } from "@/components/MaxWidthWrapper";
 import { StepperComponent } from "@/components/Steps";
 import { ReactNode } from "react";
 
-const UploadLayout = ({ children }: { children: ReactNode }) => {
+const ConfigureLayout = ({ children }: { children: ReactNode }) => {
   return (
     <MaxWidthWrapper className="flex-1 flex flex-col">
       <StepperComponent />
@@ -11,4 +11,4 @@ const UploadLayout = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export default UploadLayout;
+export default ConfigureLayout;

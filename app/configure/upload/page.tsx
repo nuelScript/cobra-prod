@@ -19,7 +19,7 @@ const UploadPage = () => {
     onClientUploadComplete: ([data]) => {
       const configId = data.serverData.configId;
       startTransition(() => {
-        router.push(`/configure/design?id${configId}`);
+        router.push(`/configure/design?id=${configId}`);
       });
     },
     onUploadProgress(p) {
@@ -29,6 +29,7 @@ const UploadPage = () => {
 
   const onDropRejected = (rejectedFiles: FileRejection[]) => {
     const [file] = rejectedFiles;
+
     setIsDragOver(false);
 
     toast({
